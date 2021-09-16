@@ -1,0 +1,45 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?e3428d5c23062afaf910c0cfd3ee4368") format("truetype"),
+url("./flaticon.woff?e3428d5c23062afaf910c0cfd3ee4368") format("woff"),
+url("./flaticon.woff2?e3428d5c23062afaf910c0cfd3ee4368") format("woff2"),
+url("./flaticon.eot?e3428d5c23062afaf910c0cfd3ee4368#iefix") format("embedded-opentype"),
+url("./flaticon.svg?e3428d5c23062afaf910c0cfd3ee4368#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "responsive": "\f101",
+    "headphone": "\f102",
+    "right-arrow": "\f103",
+    "money": "\f104",
+    "document": "\f105",
+);
+
+.flaticon-responsive:before {
+    content: map-get($flaticon-map, "responsive");
+}
+.flaticon-headphone:before {
+    content: map-get($flaticon-map, "headphone");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-money:before {
+    content: map-get($flaticon-map, "money");
+}
+.flaticon-document:before {
+    content: map-get($flaticon-map, "document");
+}
